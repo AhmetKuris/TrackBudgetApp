@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevFramework.Core", "DevFramework.Core\DevFramework.Core.csproj", "{93C91DD3-067E-4806-A7FF-F8F9B3E570D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackBudgetApp.Business", "TrackBudgetApp.Business\TrackBudgetApp.Business.csproj", "{3CAD1834-DD0C-4F5E-AD79-DF527A90D2D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackBudgetApp.DataAccess", "TrackBudgetApp.DataAccess\TrackBudgetApp.DataAccess.csproj", "{BD9C071B-20DA-4DC3-9242-1C3958F0EB9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackBudgetApp.Entities", "TrackBudgetApp.Entities\TrackBudgetApp.Entities.csproj", "{DA064BC7-6ED4-4F59-A327-1B14050CC3BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackBudgetApp.ConsoleUI", "TrackBudgetApp.ConsoleUI\TrackBudgetApp.ConsoleUI.csproj", "{C3E97BAF-B9A5-4262-A8D7-EFF8509312D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackBudgetApp.WindowsFormsUI", "TrackBudgetApp.WindowsFormsUI\TrackBudgetApp.WindowsFormsUI.csproj", "{40C76BED-93B6-4423-B005-502D24F36369}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93C91DD3-067E-4806-A7FF-F8F9B3E570D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93C91DD3-067E-4806-A7FF-F8F9B3E570D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93C91DD3-067E-4806-A7FF-F8F9B3E570D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93C91DD3-067E-4806-A7FF-F8F9B3E570D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CAD1834-DD0C-4F5E-AD79-DF527A90D2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CAD1834-DD0C-4F5E-AD79-DF527A90D2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CAD1834-DD0C-4F5E-AD79-DF527A90D2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CAD1834-DD0C-4F5E-AD79-DF527A90D2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD9C071B-20DA-4DC3-9242-1C3958F0EB9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD9C071B-20DA-4DC3-9242-1C3958F0EB9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD9C071B-20DA-4DC3-9242-1C3958F0EB9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD9C071B-20DA-4DC3-9242-1C3958F0EB9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA064BC7-6ED4-4F59-A327-1B14050CC3BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA064BC7-6ED4-4F59-A327-1B14050CC3BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA064BC7-6ED4-4F59-A327-1B14050CC3BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA064BC7-6ED4-4F59-A327-1B14050CC3BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E97BAF-B9A5-4262-A8D7-EFF8509312D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E97BAF-B9A5-4262-A8D7-EFF8509312D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E97BAF-B9A5-4262-A8D7-EFF8509312D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E97BAF-B9A5-4262-A8D7-EFF8509312D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40C76BED-93B6-4423-B005-502D24F36369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C76BED-93B6-4423-B005-502D24F36369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40C76BED-93B6-4423-B005-502D24F36369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40C76BED-93B6-4423-B005-502D24F36369}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {854C8D50-8122-428B-AFFB-A76CC8972037}
+	EndGlobalSection
+EndGlobal
