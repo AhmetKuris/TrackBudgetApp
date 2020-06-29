@@ -47,9 +47,9 @@
             this.lblCurrentBudgetTop = new System.Windows.Forms.Label();
             this.lblCurrentSavings = new System.Windows.Forms.Label();
             this.tableLayoutPanelMainBudget = new System.Windows.Forms.TableLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblCurrentSavingsAfterDateValue = new System.Windows.Forms.Label();
+            this.lblCurrentSavingsValue = new System.Windows.Forms.Label();
+            this.lblCurrentBudgetAfterDateValue = new System.Windows.Forms.Label();
             this.lblCurrentBudgetNow = new System.Windows.Forms.Label();
             this.tableLayoutPanelCurrentSavings = new System.Windows.Forms.TableLayoutPanel();
             this.dateTimePickerCurrentSavingsAfterDate = new System.Windows.Forms.DateTimePicker();
@@ -94,7 +94,6 @@
             this.btnChildFormClose.TabIndex = 2;
             this.btnChildFormClose.Text = "X";
             this.btnChildFormClose.UseVisualStyleBackColor = false;
-            this.btnChildFormClose.Click += new System.EventHandler(this.btnChildFormClose_Click);
             // 
             // tableLayoutPanelTransaction
             // 
@@ -260,7 +259,7 @@
             this.cbxTransactionOutcomeIncome.Items.AddRange(new object[] {
             "-",
             "+"});
-            this.cbxTransactionOutcomeIncome.Location = new System.Drawing.Point(540, 47);
+            this.cbxTransactionOutcomeIncome.Location = new System.Drawing.Point(540, 46);
             this.cbxTransactionOutcomeIncome.MaxDropDownItems = 2;
             this.cbxTransactionOutcomeIncome.Name = "cbxTransactionOutcomeIncome";
             this.cbxTransactionOutcomeIncome.Size = new System.Drawing.Size(84, 24);
@@ -273,7 +272,7 @@
             this.cbxTransactionCategory.Items.AddRange(new object[] {
             "-",
             "+"});
-            this.cbxTransactionCategory.Location = new System.Drawing.Point(182, 46);
+            this.cbxTransactionCategory.Location = new System.Drawing.Point(182, 47);
             this.cbxTransactionCategory.MaxDropDownItems = 2;
             this.cbxTransactionCategory.Name = "cbxTransactionCategory";
             this.cbxTransactionCategory.Size = new System.Drawing.Size(82, 24);
@@ -312,9 +311,9 @@
             this.tableLayoutPanelMainBudget.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanelMainBudget.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanelMainBudget.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanelMainBudget.Controls.Add(this.label4, 3, 1);
-            this.tableLayoutPanelMainBudget.Controls.Add(this.label3, 2, 1);
-            this.tableLayoutPanelMainBudget.Controls.Add(this.label2, 1, 1);
+            this.tableLayoutPanelMainBudget.Controls.Add(this.lblCurrentSavingsAfterDateValue, 3, 1);
+            this.tableLayoutPanelMainBudget.Controls.Add(this.lblCurrentSavingsValue, 2, 1);
+            this.tableLayoutPanelMainBudget.Controls.Add(this.lblCurrentBudgetAfterDateValue, 1, 1);
             this.tableLayoutPanelMainBudget.Controls.Add(this.lblCurrentBudgetNow, 0, 1);
             this.tableLayoutPanelMainBudget.Controls.Add(this.tableLayoutPanelCurrentSavings, 3, 0);
             this.tableLayoutPanelMainBudget.Controls.Add(this.tableLayoutPanelCurrentBudget, 1, 0);
@@ -329,44 +328,44 @@
             this.tableLayoutPanelMainBudget.Size = new System.Drawing.Size(491, 129);
             this.tableLayoutPanelMainBudget.TabIndex = 11;
             // 
-            // label4
+            // lblCurrentSavingsAfterDateValue
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(153)))), ((int)(((byte)(93)))));
-            this.label4.Location = new System.Drawing.Point(408, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 24);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "246";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblCurrentSavingsAfterDateValue.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCurrentSavingsAfterDateValue.AutoSize = true;
+            this.lblCurrentSavingsAfterDateValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblCurrentSavingsAfterDateValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(153)))), ((int)(((byte)(93)))));
+            this.lblCurrentSavingsAfterDateValue.Location = new System.Drawing.Point(408, 84);
+            this.lblCurrentSavingsAfterDateValue.Name = "lblCurrentSavingsAfterDateValue";
+            this.lblCurrentSavingsAfterDateValue.Size = new System.Drawing.Size(40, 24);
+            this.lblCurrentSavingsAfterDateValue.TabIndex = 19;
+            this.lblCurrentSavingsAfterDateValue.Text = "246";
+            this.lblCurrentSavingsAfterDateValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label3
+            // lblCurrentSavingsValue
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(153)))), ((int)(((byte)(93)))));
-            this.label3.Location = new System.Drawing.Point(285, 84);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 24);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "121";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblCurrentSavingsValue.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCurrentSavingsValue.AutoSize = true;
+            this.lblCurrentSavingsValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblCurrentSavingsValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(153)))), ((int)(((byte)(93)))));
+            this.lblCurrentSavingsValue.Location = new System.Drawing.Point(285, 84);
+            this.lblCurrentSavingsValue.Name = "lblCurrentSavingsValue";
+            this.lblCurrentSavingsValue.Size = new System.Drawing.Size(40, 24);
+            this.lblCurrentSavingsValue.TabIndex = 18;
+            this.lblCurrentSavingsValue.Text = "121";
+            this.lblCurrentSavingsValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label2
+            // lblCurrentBudgetAfterDateValue
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(153)))), ((int)(((byte)(93)))));
-            this.label2.Location = new System.Drawing.Point(163, 84);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 24);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "322";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblCurrentBudgetAfterDateValue.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCurrentBudgetAfterDateValue.AutoSize = true;
+            this.lblCurrentBudgetAfterDateValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblCurrentBudgetAfterDateValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(153)))), ((int)(((byte)(93)))));
+            this.lblCurrentBudgetAfterDateValue.Location = new System.Drawing.Point(158, 84);
+            this.lblCurrentBudgetAfterDateValue.Name = "lblCurrentBudgetAfterDateValue";
+            this.lblCurrentBudgetAfterDateValue.Size = new System.Drawing.Size(50, 24);
+            this.lblCurrentBudgetAfterDateValue.TabIndex = 17;
+            this.lblCurrentBudgetAfterDateValue.Text = "0000";
+            this.lblCurrentBudgetAfterDateValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblCurrentBudgetNow
             // 
@@ -443,6 +442,7 @@
             this.dateTimePickerCurrentBudgetAfterDate.Name = "dateTimePickerCurrentBudgetAfterDate";
             this.dateTimePickerCurrentBudgetAfterDate.Size = new System.Drawing.Size(87, 23);
             this.dateTimePickerCurrentBudgetAfterDate.TabIndex = 13;
+            this.dateTimePickerCurrentBudgetAfterDate.ValueChanged += new System.EventHandler(this.dateTimePickerCurrentBudgetAfterDate_ValueChanged);
             // 
             // lblCurrentBudgetAfterDate
             // 
@@ -469,7 +469,7 @@
             this.btnTransactionSubmit.TabIndex = 2;
             this.btnTransactionSubmit.Text = "Submit";
             this.btnTransactionSubmit.UseVisualStyleBackColor = false;
-            this.btnTransactionSubmit.Click += new System.EventHandler(this.btnChildFormClose_Click);
+            this.btnTransactionSubmit.Click += new System.EventHandler(this.btnTransactionSubmit_Click);
             // 
             // dgwTransactionsOutcome
             // 
@@ -662,9 +662,9 @@
         private System.Windows.Forms.Label lblCurrentBudgetTop;
         private System.Windows.Forms.Label lblCurrentSavings;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMainBudget;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblCurrentSavingsAfterDateValue;
+        private System.Windows.Forms.Label lblCurrentSavingsValue;
+        private System.Windows.Forms.Label lblCurrentBudgetAfterDateValue;
         private System.Windows.Forms.Label lblCurrentBudgetNow;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelCurrentSavings;
         private System.Windows.Forms.DateTimePicker dateTimePickerCurrentSavingsAfterDate;

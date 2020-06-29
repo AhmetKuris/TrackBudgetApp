@@ -21,7 +21,7 @@ namespace TrackBudgetApp.Business.Concrete
         private int _loggedInUserId;
 
         #endregion
-
+        
         public UserManager(IUserDal userDal, ITransactionDal transactionDal)
         {
             _userDal = userDal;
@@ -164,6 +164,7 @@ namespace TrackBudgetApp.Business.Concrete
                 RepetitionAfterXDay = transaction.RepetitionAfterXDay,
                 Description = transaction.Description
             });
+
         }
         public string CurrentBudgetShowByTime(DateTime dateTime)
         {
@@ -264,6 +265,6 @@ namespace TrackBudgetApp.Business.Concrete
         }
        
         #endregion
-
+        
     }
 }

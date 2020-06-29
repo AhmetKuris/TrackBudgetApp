@@ -15,32 +15,40 @@ namespace TrackBudgetApp.ConsoleUI
        
         static void Main(string[] args)
         {
-            UserManager userManager=new UserManager(new EfUserDal(), new EfTransactionDal());
-            List<User> userList = userManager.GetAllUsers();
+           
+
+            //CategoryManager categoryManager=new CategoryManager(new EfCategoryDal());
+
+            ////List<Transaction> transactionList= userManager.GetAllTransactionsByUserId(2);
+
+            ////foreach (var transaction in transactionList)
+            ////{
+            ////    Console.WriteLine(transaction.Amount);
+            ////    Console.WriteLine(transaction.CategoryId);
+            ////    Console.WriteLine(transaction.Description);
+            ////    Console.WriteLine(transaction.EffectiveTime);
+            ////    Console.WriteLine(transaction.IssuedTime);
+            ////    Console.WriteLine(transaction.Name);
+            ////    Console.WriteLine(transaction.RepetitionAfterXDay);
+            ////    Console.WriteLine(transaction.TypeId);
+            ////    Console.WriteLine(transaction.UserId);
+            ////    Console.WriteLine(transaction.Id);
+            ////}
+
+            ////var currentBudget = userManager.CalculateBudgetDependingOnTimeAndUser(DateTime.Now,
+            ////    "ahmettkuris@gmail.com");
+
+            ////Console.WriteLine("Current Budget: {0}", currentBudget);
+
+            //List<Category> listCategories= categoryManager.GetAll();
 
 
-            //List<Transaction> transactionList= userManager.GetAllTransactionsByUserId(2);
-
-            //foreach (var transaction in transactionList)
+            //foreach (var category in listCategories)
             //{
-            //    Console.WriteLine(transaction.Amount);
-            //    Console.WriteLine(transaction.CategoryId);
-            //    Console.WriteLine(transaction.Description);
-            //    Console.WriteLine(transaction.EffectiveTime);
-            //    Console.WriteLine(transaction.IssuedTime);
-            //    Console.WriteLine(transaction.Name);
-            //    Console.WriteLine(transaction.RepetitionAfterXDay);
-            //    Console.WriteLine(transaction.TypeId);
-            //    Console.WriteLine(transaction.UserId);
-            //    Console.WriteLine(transaction.Id);
+            //    Console.WriteLine(category.Name);
+            //    Console.WriteLine(category.UserId);
             //}
-
-            //var currentBudget = userManager.CalculateBudgetDependingOnTimeAndUser(DateTime.Now,
-            //    "ahmettkuris@gmail.com");
-
-            //Console.WriteLine("Current Budget: {0}", currentBudget);
-
-            //Console.ReadLine();
+           Console.ReadLine();
 
         }
     }

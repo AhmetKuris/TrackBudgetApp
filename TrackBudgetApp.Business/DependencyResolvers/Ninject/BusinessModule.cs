@@ -20,8 +20,12 @@ namespace TrackBudgetApp.Business.DependencyResolvers.Ninject
 
             Bind<ITransactionDal>().To<EfTransactionDal>().InSingletonScope();
 
+
+            Bind<ICategoryService>().To<CategoryManager>();
             Bind<ICategoryDal>().To<EfCategoryDal>().InSingletonScope();
 
+
+            Bind<ITypeService>().To<TypeManager>().InSingletonScope();
             Bind<ITypeDal>().To<EfTypeDal>().InSingletonScope();
 
 
