@@ -4,7 +4,9 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading;
 using DevFramework.Core.Aspects.Postsharp.ValidationAspects;
+using Ninject;
 using TrackBudgetApp.Business.Abstract;
+using TrackBudgetApp.Business.DependencyResolvers.Ninject;
 using TrackBudgetApp.Business.Properties;
 using TrackBudgetApp.Business.ValidationRules.FluentValidation;
 using TrackBudgetApp.Entities.Concrete;
@@ -22,12 +24,12 @@ namespace TrackBudgetApp.Business.Concrete
 
         #endregion
         
-        public UserManager(IUserDal userDal, ITransactionDal transactionDal)
+        public UserManager(ITransactionDal transactionDal, IUserDal userDal)
         {
-            _userDal = userDal;
             _transactionDal = transactionDal;
-            _loggedInUserEmail = Settings.Default.LoggedInUserEmail;
+            _userDal = userDal;
 
+            _loggedInUserEmail = Settings.Default.LoggedInUserEmail;
             _loggedInUserId = GenerateUserIdFromEmail();
         }
 
